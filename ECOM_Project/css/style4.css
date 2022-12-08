@@ -1,0 +1,78 @@
+header{
+	width: 100%;
+}
+.nav1{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap:wrap ;
+	box-shadow: 2px 0px 3px grey;
+	text-align: center;
+}
+.latest{
+  padding: 50px 100px;
+}
+.product-intro{
+  text-align: center;
+}
+.product-intro h1{
+  color: red;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.product-intro h1 span{
+  color: green;
+}
+.product-intro p{
+  color: grey;
+  margin: 15px 0;
+}
+.card-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin:4rem 0;
+}
+.card-container .card{
+  flex-basis: 20%;
+  padding: 0.8rem;
+  position: relative;
+}
+.card img{
+  width: 70%;
+  transition: 0.5s ease-in-out;
+}
+.card span{
+  color: goldenrod;
+
+}
+.card button{
+  color: white;
+  background-color: green;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  padding: 5px 20px;
+}
+.card:hover img, .card:hover h1{
+  width: 80%;
+  color: red;
+}
+.card::before{
+  content: '20% off';
+  width: 25%;
+  height: 25px;
+  line-height: 25px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  padding: 0px 4px;
+  transform: rotate(-20deg);
+}

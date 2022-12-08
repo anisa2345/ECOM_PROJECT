@@ -1,0 +1,259 @@
+body{
+	scroll-behavior: smooth;
+	font-family: 'Roboto', sans-serif;
+	
+}
+:root{
+	--primary: red;
+	--secondary: black ;
+	--light: gray;
+}
+header{
+	width: 100%;
+}
+.fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  background: darkblue;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-whatsapp {
+  background: #3B5998;
+  color: white;
+  background: green;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+  background: deeppink;
+}
+.nav1.left button{
+	color:orange;
+}
+.nav1{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap:wrap ;
+	box-shadow: 2px 0px 3px grey;
+	text-align: center;
+}
+.nav1.left{
+	flex-basis: 50%;
+	letter-spacing: 100px;
+}
+.nav1.left a{
+	text-decoration: none;
+	color: primary;
+	font-weight: bold;
+	margin: 0px 5px;
+}
+.nav1.left button{
+	color:orange;
+}
+.right{
+	flex-basis: 50%;
+}
+.nav1.right a:hover{
+	transform: rotate(360deg);
+}
+.right i{
+	transition: 0.4s ease-in-out;
+}
+.nav2{
+	width: 100%;
+	height: 120px;
+	display: flex;
+	word : wrap
+	justify-content: space-between;
+	align-items: center;
+}
+.nav2 .nav2-left,.nav2 .nav2-center,.nav2 .nav2-right,.nav2 .nav2-right-2{
+	flex-basis: 30%;
+	margin: auto;
+	cursor: pointer;
+}
+.nav2 .nav2-left i{
+	margin-left: 15px;
+	font-size: 20px;
+
+}
+.nav2 .nav2-center h1{
+	color: black;	
+	font-size: 2rem;
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+.nav2 .nav2-center h1 span{
+	color: darkred;
+}
+.nav2 .nav2-center p{
+	color: grey;
+	font-size: 15px;
+}
+.nav2 .nav2-right i{
+	margin: 0px 5px;
+}
+.nav3 {
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+}
+.nav3 ul{
+	list-style: none;
+	text-align: center;
+}
+.nav3 ul li{
+	display: inline-block;
+	position: relative;
+	z-index: 99;
+}
+.nav3 ul li a{
+	text-decoration: none;
+	color: darkblue;
+	font-weight: 500;
+	display: block;
+}
+.nav3 ul li a: hover{
+	color: green;
+}
+.nav3 ul li i{
+	color: red;
+	margin: 5px;
+}
+.nav3 ul ul {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	display: none;
+}
+.nav3 ul ul li{
+	background-color: white;
+	border-bottom: 1px solid red;
+}
+.nav3 ul li : hover ul{
+	display: block;
+}
+.featured{
+	width: 100%;
+	height: 60vh;
+	background:linear-gradient(to right ,rgba(0, 0, 0, 1)20%,rgba(255,255,255,0.2)), url('D:/LITJAVA/my project/R-ecom/g1.jpg');
+	background-size: cover;
+	background-position: top;
+	position: relative;
+}
+.featured-text{
+	max-width: 500px;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	color: white;
+	padding: 10px;
+	font-size: 2rem;
+	letter-spacing: 5px;
+	font-family: 'Akaya Kanadaka', cursive;
+}
+.featured-text button{
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background-color:black;
+	margin: 20px 0px;
+	color: white;
+}
+.latest{
+	padding: 50px 100px;
+}
+.product-intro{
+	text-align: center;
+}
+.product-intro h1{
+	color: red;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+.product-intro h1 span{
+	color: green;
+}
+.product-intro p{
+	color: grey;
+	margin: 15px 0;
+}
+.card-container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	margin:4rem 0;
+}
+	.card-container .card {
+		flex-basis: 20%;
+		padding: 0.8rem;
+		position: relative;
+	}
+.card-container .card i{
+	width:0px;
+}
+.card img{
+	width: 90%;
+	transition: 0.5s ease-in-out;
+}
+.card-img-top {
+	width: 100%;
+	height: 15vw;
+	object-fit: cover;
+}
+.card span{
+	color: goldenrod;
+
+}
+.card button{
+	color: white;
+	background-color: green;
+	border: none;
+	outline: none;
+	margin-top: 15px;
+	padding: 5px 20px;
+}
+.card:hover img, .card:hover h1{
+	width: 80%;
+	color: red;
+}
+.card::before{
+	content: '20% off';
+	width: 25%;
+	height: 25px;
+	line-height: 25px;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: red;
+	padding: 0px 4px;
+	transform: rotate(-20deg);
+}
